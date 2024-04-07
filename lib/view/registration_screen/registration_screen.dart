@@ -19,7 +19,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
   CollectionReference collectionReference =
       FirebaseFirestore.instance.collection("employees");
 
-  List<String> loginPerson = ["None", "Admin", "User"];
+  final List<String> loginPerson = ["None", "Admin", "User"];
   String selectedLogin = "None";
   @override
   Widget build(BuildContext context) {
